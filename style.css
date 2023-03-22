@@ -1,1 +1,47 @@
 @charset "utf-8";
+
+*{margin: 0; padding: 0;}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+:root{
+    --color01: rgb(3,28,50);
+    --color02: rgb(87, 35,60);
+    --color03: rgb(154,127,134);
+    --color04: rgb(179,54,91);
+    --color05: rgb(253,202,202);
+
+    --display-font: Arial, helvetica, sans-serif;
+    --font-emphasis: 'Bebas Neue'
+    
+}
+body{
+  font-family: var(--display-font);
+}
+
+header{
+  position: fixed;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px, 10%;
+  
+}
+
+section#home{
+  background-image: linear-gradient(to bottom, rgb(3,28,50), rgb(10, 83, 146) );
+  height: 600px;
+
+}
+
+
+div#slogan > p{
+  font-family: var(--font-emphasis);
+  color: var(--color05);
+  text-align: center;
+  font-size: 4em;
+}
